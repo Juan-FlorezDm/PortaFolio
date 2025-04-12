@@ -44,9 +44,9 @@ export default function Principal(){
         <>
             <div className="informacion">
                 <div className='contenido'>
-                    <img src={logo} alt="imagen react" />
+                    <img src={logo} alt="logo de recat" />
                     <img 
-                    src="personal.jpeg"
+                    src="/personal.jpeg"
                     alt="foto de perfil" 
                     style={{borderRadius: "100%", width: '80%'}}
                     />
