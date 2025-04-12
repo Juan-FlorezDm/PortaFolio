@@ -4,7 +4,6 @@ import useSound from 'use-sound';
 import primera from '../../public/canciones/musica.mp3'
 import polaroid from '../../public/canciones/polaroid.mp3'
 import ultima from '../../public/canciones/ultimavez.mp3'
-import logo from '../assets/react.svg'
 
 export default function Principal(){
 
