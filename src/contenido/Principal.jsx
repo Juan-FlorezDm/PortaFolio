@@ -44,6 +44,7 @@ export default function Principal(){
         <>
             <div className="informacion">
                 <div className='contenido'>
+                    <img src="/src/assets/react.svg" alt="imagen react" />
                     <img 
                     src="../../public/personal.jpeg"
                     alt="foto de perfil" 
