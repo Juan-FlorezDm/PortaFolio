@@ -1,6 +1,9 @@
 import React from "react";
 import '../styles/Bento.css'
 import Proyecto from "./Proyecto";
+import Backend from '../../public/Backend.mp4'
+import card from '../../public/card.jpg'
+import VideoPagina from '../../public/Video_pagina.mp4'
 
 export default function Bento(){
     return(
@@ -11,7 +14,7 @@ export default function Bento(){
                         <Proyecto 
                             descripcion="Creacion de usarios y manejo de cuentas conectada con una base de datos en mysql hecha con java"
                             titulo="Sistema Backend para un banco"
-                            video="../../public/Backend.mp4"
+                            video={Backend}
                         />
                     </a>
                 </section>
@@ -20,7 +23,7 @@ export default function Bento(){
                         <Proyecto 
                             descripcion="Pequeña pagina que consume una api para generar chistes "
                             titulo="Chiste malo"
-                            video="../../public/card.jpg"
+                            video={card}
                         />
                     </a>
                 </section>
@@ -29,7 +32,7 @@ export default function Bento(){
                         <Proyecto 
                             descripcion="Asistencia de una clase que exporta datos en archivo csv, realizado como proyecto final para el Bootcamp de Mision TIC"
                             titulo="Asistencia y reporte"
-                            video="../../public/card.jpg"
+                            video={card}
                         />
                     </a>
                 </section>
@@ -38,7 +41,7 @@ export default function Bento(){
                         <Proyecto 
                             descripcion="Desarrollo en PHP y conectado en MySQL, sistema de gestion de inventarios de equipos de computo"
                             titulo="Plataforma de inventario"
-                            video="../../public/Video_pagina.mp4"
+                            video={VideoPagina}
                         />
                     </a>
                 </section>
@@ -47,7 +50,7 @@ export default function Bento(){
                         <Proyecto 
                             descripcion="Juan"
                             titulo="Diego"
-                            video="../../public/card.jpg"
+                            video={card}
                         />
                     </a>
                 </section>

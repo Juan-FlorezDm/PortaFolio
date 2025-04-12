@@ -44,7 +44,6 @@ export default function Principal(){
         <>
             <div className="informacion">
                 <div className='contenido'>
-                    <img src={logo} alt="logo de recat" />
                     <img 
                     src="/personal.jpeg"
                     alt="foto de perfil" 
