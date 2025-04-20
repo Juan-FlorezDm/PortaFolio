@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import '../styles/Principal.css'
 import useSound from 'use-sound';
 import primera from '../../public/canciones/musica.mp3'
@@ -14,30 +14,64 @@ export default function Principal(){
     }
 
     const [indice, setIndice] = useState(1)
-    const [play,{pause}] = useSound(canciones[indice])
+    const [play,{pause, duration, sound}] = useSound(canciones[indice],{interrupt:true})
     const [reproduciendo, setreproduccion] = useState(false)
+    const [progreso, setProgreso] = useState(0)
+    const intervalRef = useRef(null)
+    const [parpadeando, setParpadeando] = useState(true)
+
+    const handleScrub = (e) => {
+        const nuevoTiempo = parseFloat(e.target.value)
+        setProgreso(nuevoTiempo)
+      
+        if (sound && typeof sound.seek === 'function') {
+          sound.seek(nuevoTiempo)
+        }
+      }
+      
 
     useEffect(() => {
         pause()
         setreproduccion(false)
+        setProgreso(0)
       }, [indice, pause])
+
+      useEffect(() => {
+        if (reproduciendo && sound) {
+          intervalRef.current = setInterval(() => {
+            const tiempoActual = sound.seek()
+            setProgreso(tiempoActual)
+          }, 500)
+        } else {
+          clearInterval(intervalRef.current)
+        }
+      
+        return () => clearInterval(intervalRef.current)
+      }, [reproduciendo, sound])
+      
+
 
     const reproducir = ()=>{
         if(reproduciendo){
             pause()
+            setParpadeando(true)
         }else{
-            play()
+            sound.play()
+            setParpadeando(false)
         }
         setreproduccion(!reproduciendo)
     }
 
       const cambioCancion = () => {
         setIndice((e) => (e === 3 ? 1 : e + 1))
+        setParpadeando(true)
       }
 
       const anterior =()=>{
         setIndice((e)=>(e===1 ? 3: e - 1))
+        setParpadeando(true)
       }
+
 
     return(
         <>
@@ -83,7 +117,8 @@ export default function Principal(){
                                     src={reproduciendo ? "../pause.png": "../play.png"} 
                                     height={35}
                                     width={35}
-                                    alt="" />
+                                    alt="" 
+                                    className={!reproduciendo && parpadeando ? "blink" : ""}/>
                             </button>
                                 
                             <button onClick={cambioCancion}>
@@ -93,7 +128,17 @@ export default function Principal(){
                                     height={25}
                                     alt="next" />
                             </button>
-                        </div>             
+                        </div>         
+                        <div className='time'>
+                            <input
+                                type="range"
+                                min="0"
+                                max={duration ? duration / 1000 : 0}
+                                onChange={handleScrub}
+                                value={progreso}
+                                step="0.1"
+                            />
+                        </div>
                     </div>    
                 </div>
             </div>

@@ -91,3 +91,77 @@ button{
     color: transparent;
     border: transparent;
 }
+
+.time{
+    width: 75%;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  input[type="range"]:focus {
+    outline: none;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #747575;
+    border-radius: 0.9rem;
+    height: 0.3rem;
+  }
+  
+  /* slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: -3px; 
+    background-color: #f0e3e3;
+    border-radius: 0.5rem;
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+  
+  input[type="range"]:focus::-webkit-slider-thumb {
+    outline: 3px solid #ffffff;
+    outline-offset: 0.125rem;
+  }
+  
+
+  input[type="range"]::-moz-range-track {
+    background-color: #9ba0a1;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    background-color: #ffffff;
+    border: none; 
+    border-radius: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  input[type="range"]:focus::-moz-range-thumb{
+    outline: 3px solid #ffffff;
+    outline-offset: 0.125rem;
+  }
+
+  @keyframes blinkZoom {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
+  }
+  
+  .blink {
+    animation: blinkZoom 1s infinite;
+  }
+  
