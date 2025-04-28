@@ -4,6 +4,10 @@ import Proyecto from "./Proyecto";
 import Backend from '../../public/Backend.mp4'
 import card from '../../public/card.jpg'
 import VideoPagina from '../../public/Video_pagina.mp4'
+import gif_dos from '../../public/gif_dos.gif'
+import gif_uno from '../../public/gif_uno.gif'
+import gif_tres from '../../public/gif_tres.gif'
+
 
 export default function Bento(){
     return(
@@ -18,7 +22,7 @@ export default function Bento(){
                         />
                     </a>
                 </section>
-                <section className="Proyect_dos">
+                <section className="Proyecto_dos">
                     <a href="">
                         <Proyecto 
                             descripcion="Pequeña pagina que consume una api para generar chistes "
@@ -28,11 +32,10 @@ export default function Bento(){
                     </a>
                 </section>
                 <section className="Proyecto_tres">
-                    <a href="https://github.com/Juan-FlorezDm/ProyectoFinal">
+                    <a>
                         <Proyecto 
-                            descripcion="Asistencia de una clase que exporta datos en archivo csv, realizado como proyecto final para el Bootcamp de Mision TIC"
-                            titulo="Asistencia y reporte"
-                            video={card}
+                            titulo="deco"
+                            video={gif_dos}
                         />
                     </a>
                 </section>
@@ -46,6 +49,31 @@ export default function Bento(){
                     </a>
                 </section>
                 <section className="Proyecto_cinco">
+                    <a>
+                        <Proyecto 
+                            titulo="deco"
+                            video={gif_uno}
+                        />
+                    </a>
+                </section>
+                <section className="Proyecto_seis">
+                    <a href="https://github.com/Juan-FlorezDm/ProyectoFinal">
+                        <Proyecto 
+                            descripcion="Asistencia de una clase que exporta datos en archivo csv, realizado como proyecto final para el Bootcamp de Mision TIC"
+                            titulo="Asistencia y reporte"
+                            video={card}
+                        />
+                    </a>
+                </section>
+                <section className="Proyecto_siete">
+                    <a>
+                        <Proyecto 
+                            titulo="deco"
+                            video={gif_tres}
+                        />
+                    </a>
+                </section>
+                <section className="Proyecto_ocho">
                     <a href="">
                         <Proyecto 
                             descripcion="Juan"
@@ -54,6 +82,14 @@ export default function Bento(){
                         />
                     </a>
                 </section>
+                {/* <div className="Proyecto_uno">Proyecto 1</div>
+                <div className="Proyecto_dos">Proyecto 2</div>
+                <div className="Proyecto_tres">Proyecto 3</div>
+                <div className="Proyecto_cuatro">Proyecto 4</div>
+                <div className="Proyecto_cinco">Proyecto 5</div>
+                <div className="Proyecto_seis">Proyecto 6</div>
+                <div className="Proyecto_siete">Proyecto 7</div>
+                <div className="Proyecto_ocho">Proyecto 8</div> */}
             </div>
         </>
     );

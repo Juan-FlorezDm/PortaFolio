@@ -1,33 +1,57 @@
+video {
+    object-fit: cover;
+    position: absolute;
+    filter: brightness(0.5);
+    border-radius: 18px;
+}
+
+.target {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 18px;
+}
+
+.proyecto-card:hover .target {
+    opacity: 1;
+}
+.proyecto-card:hover video {
+    transform: scale(1.15);
+    border-radius: 18px;
+}
+
 .proyecto-card {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    border-radius: 18px; 
 }
 
-.proyecto-video {
+.proyecto-card video {
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+    position: absolute;
+    transition: transform 0.5s ease;
+    border-radius: inherit;
+}
+
+.gif{
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
 }
-
-h2{
-    font-size: medium;
-    margin-bottom: 3%;
-    color: rgb(255, 255, 255);
-}
-
-.descripcion{
-    font-size: 0.9rem;
-    margin-top: 0;
-    color: rgb(238, 229, 229);
-    width: 100%;
-}
-
-.target{
-    margin-left: 8%;
-    margin-right: 1%;
-}
-  

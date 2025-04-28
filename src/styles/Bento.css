@@ -1,19 +1,28 @@
 .Proyectos{
-    flex: 1 1 calc(33% - 16px);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center ;  
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap:8px;
+    width: 100%;
+    margin-left: 15px;
 }
 
 section{
     border: solid 1px rgba(255, 255, 255, 0.267);
-    border-radius: 10px;
-    width: 30%;
-    height: 45%;
+    border-radius: 1px;
     background: linear-gradient(180deg, #333232 0%, rgb(70, 69, 69) 100%);
+    border-radius: 18px;
 }
 
-.Proyecto_cuatro, .Proyecto_cinco{
-    width: 35%;
-}   
+
+
+.Proyecto_uno { grid-area: 1 / 1 / 9 / 13; }
+.Proyecto_dos { grid-area: 1 / 13 / 9 / 16; }
+.Proyecto_tres { grid-area: 1 / 16 / 15 / 21; }
+.Proyecto_cuatro { grid-area: 9 / 4 / 15 / 16; }
+.Proyecto_cinco { grid-area: 9 / 1 / 21 / 4; }
+.Proyecto_seis { grid-area: 15 / 4 / 21 / 12; }
+.Proyecto_siete { grid-area: 15 / 12 / 21 / 16; }
+.Proyecto_ocho { grid-area: 15 / 16 / 21 / 21; }
+

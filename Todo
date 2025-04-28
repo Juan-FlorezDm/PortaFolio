@@ -20,11 +20,11 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
-.div1 { grid-area: 1 / 1 / 9 / 13; }
-.div2 { grid-area: 1 / 13 / 9 / 16; }
-.div3 { grid-area: 1 / 16 / 15 / 21; }
-.div4 { grid-area: 9 / 4 / 15 / 16; }
-.div5 { grid-area: 9 / 1 / 21 / 4; }
-.div6 { grid-area: 15 / 4 / 21 / 12; }
-.div7 { grid-area: 15 / 12 / 21 / 16; }
-.div8 { grid-area: 15 / 16 / 21 / 21; }
+.Proyecto_uno { grid-area: 1 / 1 / 9 / 13; }
+.Proyect_dos { grid-area: 1 / 13 / 9 / 16; }
+.Proyecto_tres { grid-area: 1 / 16 / 15 / 21; }
+.Proyecto_cuatro { grid-area: 9 / 4 / 15 / 16; }
+.Proyecto_cinco { grid-area: 9 / 1 / 21 / 4; }
+.Proyecto_seis { grid-area: 15 / 4 / 21 / 12; }
+.Proyecto_siete { grid-area: 15 / 12 / 21 / 16; }
+.Proyecto_ocho { grid-area: 15 / 16 / 21 / 21; }
