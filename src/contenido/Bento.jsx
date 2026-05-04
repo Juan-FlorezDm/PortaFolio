@@ -7,6 +7,7 @@ import VideoPagina from '../../public/Video_pagina.mp4'
 import gif_dos from '../../public/gif_dos.gif'
 import gif_uno from '../../public/gif_uno.gif'
 import gif_tres from '../../public/gif_tres.gif'
+import VideoEcommerce from '../../public/Video_e-commerce.mov'
 
 
 export default function Bento(){
@@ -19,15 +20,6 @@ export default function Bento(){
                             descripcion="Creacion de usarios y manejo de cuentas conectada con una base de datos en mysql hecha con java"
                             titulo="Sistema Backend para un banco"
                             video={Backend}
-                        />
-                    </a>
-                </section>
-                <section className="Proyecto_dos">
-                    <a href="">
-                        <Proyecto 
-                            descripcion="Pequeña pagina que consume una api para generar chistes "
-                            titulo="Chiste malo"
-                            video={card}
                         />
                     </a>
                 </section>
@@ -57,11 +49,11 @@ export default function Bento(){
                     </a>
                 </section>
                 <section className="Proyecto_seis">
-                    <a href="https://github.com/Juan-FlorezDm/ProyectoFinal">
+                    <a href="https://github.com/Juan-FlorezDm/proyecto_final_u">
                         <Proyecto 
-                            descripcion="Asistencia de una clase que exporta datos en archivo csv, realizado como proyecto final para el Bootcamp de Mision TIC"
-                            titulo="Asistencia y reporte"
-                            video={card}
+                            titulo="E-commerce"
+                            descripcion="E-commerce de productos, con vista adminstrativa y de usuario, desplegada en la web"
+                            video={VideoEcommerce}
                         />
                     </a>
                 </section>
@@ -73,23 +65,6 @@ export default function Bento(){
                         />
                     </a>
                 </section>
-                <section className="Proyecto_ocho">
-                    <a href="">
-                        <Proyecto 
-                            descripcion="Juan"
-                            titulo="Diego"
-                            video={card}
-                        />
-                    </a>
-                </section>
-                {/* <div className="Proyecto_uno">Proyecto 1</div>
-                <div className="Proyecto_dos">Proyecto 2</div>
-                <div className="Proyecto_tres">Proyecto 3</div>
-                <div className="Proyecto_cuatro">Proyecto 4</div>
-                <div className="Proyecto_cinco">Proyecto 5</div>
-                <div className="Proyecto_seis">Proyecto 6</div>
-                <div className="Proyecto_siete">Proyecto 7</div>
-                <div className="Proyecto_ocho">Proyecto 8</div> */}
             </div>
         </>
     );
