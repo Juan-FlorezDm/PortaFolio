@@ -89,18 +89,15 @@ export default function Principal(){
                             <ul>
                                 <li><a href="https://github.com/Juan-FlorezDm" target='_blank'>Github</a></li>
                                 <li><a href="https://www.linkedin.com/in/juan-diego-florez-mendez-632522234/" target='_blank'>Linkedln</a></li>
-                                <li><a href="https://open.spotify.com/user/31ijr27ek5q36thgywgia2cnmqy4?si=b1299b6eee6b4d4a" target='_blank'>Spotify</a></li>
                             </ul>
                         </nav>
                         <p>
                         Hola, soy estudiante de ingeniería de sistemas
-                        Me apasiona aprender cosas nuevas, de cualquier tema,
-                        me apasiona conocer personas ampliar mi circulo social.< br />
+                        graduado de tecnologia en desarrollo de software.< br />
                         <br />
                         Soy entusiasta, y me esfuerzo por aprender tecnologías como
-                        Java, Javascrpit, HTML, CSS, React, Linux, herramientas
-                        de búsqueda de vulnerabilidades, la computación
-                        en la nube como AWS, Oracle cloud
+                        Java, Javascrpit, HTML, CSS, React, Linux, la computación
+                        en la nube como AWS, Oracle cloud.
                         </p>
 
                         

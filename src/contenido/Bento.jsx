@@ -2,7 +2,6 @@ import React from "react";
 import '../styles/Bento.css'
 import Proyecto from "./Proyecto";
 import Backend from '../../public/Backend.mp4'
-import card from '../../public/card.jpg'
 import VideoPagina from '../../public/Video_pagina.mp4'
 import gif_dos from '../../public/gif_dos.gif'
 import gif_uno from '../../public/gif_uno.gif'
