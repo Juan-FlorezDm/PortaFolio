@@ -14,8 +14,7 @@ export default function Estudios(){
 
                     <Info 
                     titulo="Bootcamp Desarrollo web Full Stack"
-                    descripcion="Curso Básico de Desarrollo Web Fullstack 
-                    manejando Conceptos de HTML y CSS, manejo y creación de API 
+                    descripcion="Manejando Conceptos de HTML y CSS, manejo y creación de API 
                     Backend en Node.js y bases de datos en Express,
                     Mongo, MySql, y conceptos de REACT, y creación de varios proyectos."
                     imagen={Bootcamp}
