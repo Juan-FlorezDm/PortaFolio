@@ -1,7 +1,11 @@
 import React from "react";
 import Info from "./Estudio";
 import '../styles/Estudio.css'
+import Grado from '../../public/Grado.png'
 import Bootcamp from '../../public/diploma_bootcamp.png'
+
+import { Timeline } from "flowbite-react";
+
 export default function Estudios(){
     return(
         <>
@@ -25,7 +29,7 @@ export default function Estudios(){
                     SpringBoot, Java, MySQL, y manejo de metodologias agiles, 
                     con experiencia en proyectos de desarrollo de software y 
                     colaboracion en equipo."
-                    imagen={Bootcamp}
+                    imagen={Grado}
                     fecha_inicio="Ago. 2022"
                     fecha_finalizacion="Dic. 2025"
                     />

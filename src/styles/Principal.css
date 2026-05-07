@@ -6,8 +6,14 @@
     align-items: center;
     border-right: solid 1px white;
     height: 97vh;
-    gap: 1.5rem;
 } 
+
+h3{
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+}
 
 .fondo{
     position: absolute;
@@ -25,7 +31,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     border: solid 1px rgba(255, 255, 255, 0.267);
     border-radius: 25px;
     padding: 1.5rem;
@@ -45,6 +51,7 @@
 p{
     width: 70%;
     color: white;
+    font-size: large;
 }
 
 ul{
@@ -76,12 +83,15 @@ li:hover{
     border-radius: 15px;
     background-color: rgba(68, 68, 68, 0.514);
     color: rgb(192, 187, 187);
+    scale: 1.1;
+    transition: 0.4s;
 }
 
 .cancion{
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding-top: 10%;
 }
 
 button{
@@ -165,3 +175,8 @@ input[type="range"] {
     animation: blinkZoom 1s infinite;
   }
   
+.Section_text{
+  height: 9vh;
+}
+
+ 

@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import '../styles/Principal.css'
 import useSound from 'use-sound';
+import TextType from './TextType';
+
 import primera from '../../public/canciones/musica.mp3'
 import polaroid from '../../public/canciones/polaroid.mp3'
 import ultima from '../../public/canciones/ultimavez.mp3'
@@ -72,7 +74,6 @@ export default function Principal(){
         setParpadeando(true)
       }
 
-
     return(
         <>
             <div className="informacion">
@@ -90,14 +91,26 @@ export default function Principal(){
                                 <li><a href="https://github.com/Juan-FlorezDm" target='_blank'>Github</a></li>
                                 <li><a href="https://www.linkedin.com/in/juan-diego-florez-mendez-632522234/" target='_blank'>Linkedln</a></li>
                             </ul>
+                            <h3>Hola, soy Juan Di Florez</h3>
                         </nav>
                         <p>
-                        Hola, soy estudiante de ingeniería de sistemas
-                        graduado de tecnologia en desarrollo de software.< br />
-                        <br />
-                        Soy entusiasta, y me esfuerzo por aprender tecnologías como
-                        Java, Javascrpit, HTML, CSS, React, Linux, la computación
-                        en la nube como AWS, Oracle cloud.
+                            <div className='Section_text'>
+                                <TextType 
+                                text={[
+                                    "Estudiante de ingeniería de sistemas, graduado de tecnologia en desarrollo de software",
+                                    "Soy entusiasta, y me esfuerzo por aprender tecnologías como Java, Javascrpit, HTML, CSS, React, Linux, la computación en la nube como AWS, Oracle cloud."
+                                    ]}
+                                typingSpeed={50}
+                                pauseDuration={500}
+                                showCursor
+                                cursorCharacter="_"
+                                deletingSpeed={0}
+                                variableSpeedEnabled={false}
+                                variableSpeedMin={60}
+                                variableSpeedMax={120}
+                                cursorBlinkDuration={0.5}
+                                />
+                            </div>  
                         </p>
 
                         

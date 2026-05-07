@@ -4,12 +4,19 @@
     margin-left: 15px;
 }
 
+h1{
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 1 rem;
+    padding-left: 10px;
+    padding-top: 20px;
+}
 .estudio-card {
-    width: 50%;
-    height: 25vh;
+    height: 23vh;
     color: white;
     position: relative;
     display: flex;
+    row-gap: 20px;
+
 }
 
 .estudio-imagen{
@@ -25,6 +32,7 @@
 .estudio-imagen:hover{
     opacity: 0.1;
     border: solid 1px rgb(255, 255, 255);
+    transition: 1s;
 }
 
 .estudio-data{
@@ -52,4 +60,8 @@
 
 .footer-estudio p:last-child{
     text-align: end;
+}
+
+.section_estudios{
+    gap: 1rem;
 }

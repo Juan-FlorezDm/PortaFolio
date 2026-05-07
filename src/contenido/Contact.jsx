@@ -4,7 +4,7 @@ export default function Contact(){
     return(
         <>
         <div className="centrar">
-           <div className="datos_contacto">
+           <div className="experiencia">
                 
            </div>
         </div>
