@@ -3,9 +3,9 @@ import '../styles/Principal.css'
 import useSound from 'use-sound';
 import TextType from './TextType';
 
-import primera from '../../public/canciones/musica.mp3'
-import polaroid from '../../public/canciones/polaroid.mp3'
-import ultima from '../../public/canciones/ultimavez.mp3'
+import primera from '../../public/musica.mp3'
+import polaroid from '../../public/polaroid.mp3'
+import ultima from '../../public/ultimavez.mp3'
 
 export default function Principal(){
 

@@ -6,7 +6,7 @@ import VideoPagina from '../../public/Video_pagina.mp4'
 import gif_dos from '../../public/gif_dos.gif'
 import gif_uno from '../../public/gif_uno.gif'
 import gif_tres from '../../public/gif_tres.gif'
-import VideoEcommerce from '../../public/Video_e-commerce.mov'
+import VideoEcommerce from '../../public/video_e-commerce.mov'
 
 
 export default function Bento(){
